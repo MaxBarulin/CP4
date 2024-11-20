@@ -11,12 +11,6 @@ class JSONSaver(BaseJsonSaver):
         """Констркутор, инициализирует путь до файла (для работы с ним)"""
         self.__file_saver = file_saver
 
-    def load_json(self):
-        """Метод получения данных из файла"""
-        with open(self.__file_saver, encoding="utf-8") as file:
-            json_file = json.load(file)
-            return json_file
-
     @staticmethod
     def load_info_json(file_path):
         """Метод получения данных из файла"""
